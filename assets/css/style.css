@@ -97,10 +97,41 @@ body {
     margin-bottom: 2rem;
 }
 
-.project-card {
+.project-cards {
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 1rem;
+    max-width: 320px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 0.5rem;
 }
 
 .card {
@@ -121,4 +152,83 @@ body {
 .card p {
     font-size: 0.9rem;
     color: #666;
+}
+
+/* About Me Section */
+.about {
+    margin-top: 5rem;
+    padding: 2rem 0;
+}
+
+.about-content {
+    display: flex;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 2;
+    min-width: 260px;
+}
+
+.about-text h3 {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 0.98rem;
+    color: #444;
+    margin-bottom: 0.7rem;
+}
+
+.about-buttons {
+    margin-top: 1.5rem;
+}
+
+.primary-btn, .secondary-btn {
+    display: inline-block;
+    padding: 10px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 0.7rem;
+    margin-bottom: 0.5rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.primary-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+}
+.primary-btn:hover {
+    background: #333;
+}
+
+.secondary-btn {
+    background: #f4f4f4;
+    color: #222;
+    border: 1px solid #ccc;
+}
+.secondary-btn:hover {
+    background: #e0e0e0;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 12px;
+    object-fit: cover;
 }
